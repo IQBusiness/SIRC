@@ -1,0 +1,37 @@
+extends scaffold
+
+block title
+  | Transporte Urbano
+
+block content
+  small#ciudad.typo-styles__demo.mdl-typography--title(style="margin-bottom: 7px;") Ubicando...
+  div#map_canvas(style="position: relative; height:380px; width:100%; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0px); margin-bottom:15px;")
+  label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect
+
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+      <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked />
+      <span class="mdl-radio__label">Option 1</span>
+    </label>
+    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" />
+      <span class="mdl-radio__label">Option 2</span>
+    </label>
+
+
+
+  div.demo-grid-ruler.mdl-grid(style="width:100%;")
+    div.mdl-cell.mdl-cell--4-col
+      | Estado: 
+      select#cmb-estados
+        option(value="volvo") Seleccione un valor
+    div.mdl-cell.mdl-cell--4-col
+      | Ciudad: 
+      select#cmb-ciudades
+        option(value="") Seleccione un valor
+    div.mdl-cell.mdl-cell--4-col
+      | Ruta: 
+      select#cmb-rutas
+        option(value="") Seleccione una valor
+
+block js
+  script(src='/js/dashboard.js')

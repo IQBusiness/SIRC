@@ -1,0 +1,14 @@
+extends scaffold
+
+block title
+  | Demo 1 Real Time
+
+block content
+  small.typo-styles__demo.mdl-typography--title(style="margin-bottom: 7px;") Ruta "Pinos", en la ciudad de Celaya Guanajuato, en el tramo oriente a poniente
+  div#map_canvas(style="position: relative; height:380px; width:100%; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0px); margin-bottom:5px;")
+  center(style="width:100%;")
+    p La finalidad de este demo es que todos los usuarios que entren a esta sección, veran el mismo comportamiento en el mapa interactivo cuando un usuario presione el boton "Iniciar Demo", con la finalidad de simular que un autobs se mueve en tiempo real.
+    button#btn-test-rt.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored Iniciar Demo
+
+block js
+  script(src='/js/demo1.js')

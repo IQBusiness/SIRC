@@ -1,0 +1,25 @@
+{
+  "name": "sirc",
+  "version": "1.0.0",
+  "description": "Sistema Inteligente de Reconocimiento Contextual",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@jcarmonamx",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.4",
+    "morgan": "^1.6.1",
+    "mysql": "^2.8.0",
+    "passport": "^0.2.2",
+    "passport-facebook": "^2.0.0",
+    "socket.io": "^1.3.6",
+    "xml2js": "^0.4.9"
+  }
+}
